@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SwatchWatch.iml" filepath="$PROJECT_DIR$/SwatchWatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frosting/frosting.iml" filepath="$PROJECT_DIR$/frosting/frosting.iml" />
     </modules>
   </component>
 </project>

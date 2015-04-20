@@ -4,25 +4,19 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
+
 import com.crashlytics.android.Crashlytics;
 
-public class MainActivity extends Activity {
+public class ThirdActivity extends Activity {
 
-    private TextView mEyes;
-    private TextView mLips;
-    private TextView mFace;
-    private TextView mBody;
-    private TextView mNaked;
-    private TextView mPalletes;
 
     private View.OnClickListener mClick = new View.OnClickListener() {
 
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            Intent intent = new Intent(ThirdActivity.this, SecondActivity.class);
             startActivity(intent);
         }
     };
@@ -31,19 +25,12 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Crashlytics.start(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.third_activity);
         final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub);
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
-                mEyes = (TextView) stub.findViewById(R.id.eyes);
-                mLips = (TextView) stub.findViewById(R.id.lips);
-                mFace = (TextView) stub.findViewById(R.id.face);
-                mBody = (TextView) stub.findViewById(R.id.body);
-                mNaked = (TextView) stub.findViewById(R.id.naked);
-                mPalletes = (TextView) stub.findViewById(R.id.palletes);
 
-                mLips.setOnClickListener(mClick);
             }
         });
     }

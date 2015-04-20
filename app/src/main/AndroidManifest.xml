@@ -24,6 +24,15 @@
             android:label="@string/app_name" >
 
         </activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="ec84deb07f02866b64701fb7a10162ecaa9fa8e5" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

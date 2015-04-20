@@ -1,0 +1,3 @@
+[submodule "frosting"]
+	path = frosting
+	url = https://github.com/ovenbits/frosting.git
